@@ -33,52 +33,52 @@
    border: 3px double #000000;">
    Przycisk tworzymy dodając HTML kod <button>"button"</button> (oczywiście trzeba dać również specjalne znaczniki, takie jak nawiasy kwadratowe).</p> 
    
-   <div style="font-size: 30px;
+    <!-- Tu się zaczyna ćwiczenie z przyciskami. -->
+    <div style="font-size: 30px;
     text-align: center;
     background-color: #2D73B9;
     border: 3px groove #000000;">
    Jakiego koloru jest trawa?<br>
    
-    <!--Tu się zaczyna komenda przycisku "Niebieskiego".-->
-    <button type="button" onclick="playAudio(); 
-     document.getElementById('wynik').innerText = 'Trawa nie jest koloru niebieskiego. Skąd taki pomysł? 🤨'">Niebieskiego</button>
+     <!-- Komenda przycisku "Niebieskiego". -->
+     <button type="button" onclick="playFail(); document.getElementById('wynik').innerText = 'Trawa nie jest koloru niebieskiego. Skąd taki pomysł? 🤨'">
+        Niebieskiego
+    </button>
+     <!-- Koniec "Niebieski" przycisk. -->
 
-    <!--Dalej komenda "Niebieskiego", jednak działanie po kliknięciu.-->
-   <script>
-function playAudio() {
+     <!-- Komenda przycisku "Zielonego". -->
+     <button type="button" onclick="playVictory(); document.getElementById('wynik').innerText = 'Trawa jest zielona. Gratulacje! Taka właśnie jest odpowiedź. 🙂'">
+        Zielonego
+    </button>
+     <!-- Koniec "Zielony" przycisk. -->
+   
+     <!-- Komenda przycisku "Czerwonego". -->
+     <button type="button" onclick="playFail(); document.getElementById('wynik').innerText = 'Trawa nie jest koloru czerwonego. Skąd taki pomysł? 🤨'">
+        Czerwonego
+    </button>
+     <!-- Koniec "Czerwony" przycisk. -->
+    
+    <!-- Puste miejsce na odpowiedź po kliknięciu przycisków. -->
+    <p id="wynik" style="font-size: 15px; 
+     font-weight: bold; 
+     margin-top: 15px; 
+     min-height: 30px; 
+     color: black;"></p> 
+</div>
+
+<!-- Wszystkie skrypty dotyczące dźwięków po naciśnięciu przycisków połączone w jeden, bezpieczny blok na samym dole. -->
+<script>
+function playFail() {
     var audio = new Audio('fail.mp3');
     audio.play();
-} 
-</script>
-    <!--Tu się kończy "Niebieski" przycisk.-->
+}
 
-    <!--Tu się zaczyna komenda przycisku "Zielonego".-->
-    <button type="button" onclick="playAudio(); 
-     document.getElementById('wynik').innerText = 'Trawa jest zielona. Gratulacje! Taka właśnie jest odpowiedź. 🙂'">Zielonego</button>
-    
-  
-   <!--Dalej komenda "Zielonego", jednak działanie po kliknięciu.-->
-   <script>
-function playAudio() {
+function playVictory() {
     var audio = new Audio('victory.mp3');
     audio.play();
-} 
+}
 </script>
-    <!--Tu się kończy "Zielony" przycisk.-->
-   
-    <!--Tu się zaczyna komenda przycisku "Czerwonego".-->
-    <button type="button" onclick="playAudio(); 
-     document.getElementById('wynik').innerText = 'Trawa nie jest koloru czerwonego. Skąd taki pomysł? 🤨'">Czerwonego</button>
-  
-   <!--Dalej komenda "Czerwonego", jednak działanie po kliknięciu.-->
-   <script>
-function playAudio() {
-    var audio = new Audio('fail.mp3');
-    audio.play();
-} 
-</script>
-    <!--Tu się kończy "Czerwony" przycisk.--> 
-   </div>
+    
      
  <br>
 
