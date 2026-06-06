@@ -39,55 +39,48 @@
     border: 3px groove #000000;">
    Jakiego koloru jest trawa?<br>
    
+    <!--Tu się zaczyna komenda przycisku "Niebieskiego".-->
     <button type="button" onclick="playAudio(); 
-     document.getElementById('wynik').innerText = 'Trawa nie jest koloru niebieskiego. Skąd taki pomysł? 🤨'">
-        Niebieskiego
-    </button>
-   
-    
-    <p id="wynik" style="font-size: 20px; 
-     font-weight: bold; 
-     margin-top: 15px; 
-     min-height: 30px; 
-     color: black;">
-    </p>
+     document.getElementById('wynik').innerText = 'Trawa nie jest koloru niebieskiego. Skąd taki pomysł? 🤨'">Niebieskiego</button>
 
- <script>
+    <!--Dalej komenda "Niebieskiego", jednak działanie po kliknięciu.-->
+   <script>
 function playAudio() {
     var audio = new Audio('fail.mp3');
     audio.play();
 } 
 </script>
+    <!--Tu się kończy "Niebieski" przycisk.-->
 
-    <button type="button" onclick="document.getElementById('wynik').innerText = 'Trawa jest zielona. Gratulacje! Taka właśnie jest odpowiedź. 🙂'">Zielonego</button>
-   
+    <!--Tu się zaczyna komenda przycisku "Zielonego".-->
     <button type="button" onclick="playAudio(); 
-     document.getElementById('wynik').innerText = 'Trawa nie jest koloru czerwonego. Skąd taki pomysł? 🤨'">
-        Czerwonego
-    </button>
-   
+     document.getElementById('wynik').innerText = 'Trawa jest zielona. Gratulacje! Taka właśnie jest odpowiedź. 🙂'">Zielonego</button>
     
-    <p id="wynik" style="font-size: 20px; 
-     font-weight: bold; 
-     margin-top: 15px; 
-     min-height: 30px; 
-     color: black;">
-    </p>
-
-<script>
+  
+   <!--Dalej komenda "Zielonego", jednak działanie po kliknięciu.-->
+   <script>
+function playAudio() {
+    var audio = new Audio('victory.mp3');
+    audio.play();
+} 
+</script>
+    <!--Tu się kończy "Zielony" przycisk.-->
+   
+    <!--Tu się zaczyna komenda przycisku "Czerwonego".-->
+    <button type="button" onclick="playAudio(); 
+     document.getElementById('wynik').innerText = 'Trawa nie jest koloru czerwonego. Skąd taki pomysł? 🤨'">Czerwonego</button>
+  
+   <!--Dalej komenda "Czerwonego", jednak działanie po kliknięciu.-->
+   <script>
 function playAudio() {
     var audio = new Audio('fail.mp3');
     audio.play();
 } 
 </script>
+    <!--Tu się kończy "Czerwony" przycisk.--> 
+   </div>
      
-     
-     <button type="button" onclick="document.getElementById('wynik').innerText = 'Trawa nie jest koloru czerwonego. Skąd taki pomysł? 🤨'">Czerwonego</button>
-
-    
-    <div id="wynik" style="margin-top: 20px; font-size: 24px; font-weight: bold; min-height: 30px;"></div>
-    </div>
-   <br>
+ <br>
 
    <p style="font-size: 18px;
    background-color: #DEBDD6;
