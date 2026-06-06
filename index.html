@@ -33,18 +33,22 @@
    border: 3px double #000000;">
    Przycisk tworzymy dodając HTML kod <button>"button"</button> (oczywiście trzeba dać również specjalne znaczniki, takie jak nawiasy kwadratowe).</p> 
    
-   <p style="font-size: 30px;
+   <div style="font-size: 30px;
     text-align: center;
     background-color: #2D73B9;
     border: 3px groove #000000;">
    Jakiego koloru jest trawa?<br>
    
-    <button>Niebieskiego</button>
+   <button type="button" onclick="document.getElementById('wynik').innerText = 'Trawa nie jest koloru niebieskiego. Skąd taki pomysł? 🤨'">Niebieskiego</button>
    
-    <button>Zielonego</button>
+    <button type="button" onclick="document.getElementById('wynik').innerText = 'Trawa jest zielona. Gratulacje! Taka właśnie jest odpowiedź. 🙂'">Zielonego</button>
    
-    <button>Czerwonego</button>
-   </p>  <br>
+    <button type="button" onclick="document.getElementById('wynik').innerText = 'Trawa nie jest koloru czerwonego. Skąd taki pomysł? 🤨'">Czerwonego</button>
+
+    
+    <div id="wynik" style="margin-top: 20px; font-size: 24px; font-weight: bold; min-height: 30px;"></div>
+    </div>
+   <br>
 
    <p style="font-size: 18 px;
    background-color: #DEBDD6;
@@ -128,6 +132,14 @@
    background-color: #DEBDD6;
    border: 3px double #000000;">
    Powstaje dzięki "<b style="text-decoration: underline;">img</b>" z dodaniem "<b style="text-decoration: underline;">src</b>"</p>
+
+   <p style="font-size: 18 px;
+   text-align: center;
+   background-color: #DEBDD6;
+   border: 3px double #000000;"> 
+   <p onmouseenter="alert('Czasem pojawiają się komunikaty z bieżącej strony. Powstają one dzięki elementowi "alert".')">
+   Czasem pojawiają się się komunikaty z bieżącej strony.
+   </p>
 
    
 
