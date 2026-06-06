@@ -45,12 +45,14 @@
     </button>
    
     
-    <p id="wynik" style="font-size: 20px; font-weight: bold; margin-top: 15px; min-height: 30px; color: black;">
+    <p id="wynik" style="font-size: 20px; 
+     font-weight: bold; 
+     margin-top: 15px; 
+     min-height: 30px; 
+     color: black;">
     </p>
 
-</div> 
-
-<script>
+ <script>
 function playAudio() {
     var audio = new Audio('fail.mp3');
     audio.play();
@@ -59,7 +61,28 @@ function playAudio() {
 
     <button type="button" onclick="document.getElementById('wynik').innerText = 'Trawa jest zielona. Gratulacje! Taka właśnie jest odpowiedź. 🙂'">Zielonego</button>
    
-    <button type="button" onclick="document.getElementById('wynik').innerText = 'Trawa nie jest koloru czerwonego. Skąd taki pomysł? 🤨'">Czerwonego</button>
+    <button type="button" onclick="playAudio(); 
+     document.getElementById('wynik').innerText = 'Trawa nie jest koloru czerwonego. Skąd taki pomysł? 🤨'">
+        Czerwonego
+    </button>
+   
+    
+    <p id="wynik" style="font-size: 20px; 
+     font-weight: bold; 
+     margin-top: 15px; 
+     min-height: 30px; 
+     color: black;">
+    </p>
+
+<script>
+function playAudio() {
+    var audio = new Audio('fail.mp3');
+    audio.play();
+} 
+</script>
+     
+     
+     <button type="button" onclick="document.getElementById('wynik').innerText = 'Trawa nie jest koloru czerwonego. Skąd taki pomysł? 🤨'">Czerwonego</button>
 
     
     <div id="wynik" style="margin-top: 20px; font-size: 24px; font-weight: bold; min-height: 30px;"></div>
